@@ -283,12 +283,10 @@
   },
   {
     "id": "tpl-unreliable-airspeed-rops",
-    "title": "Unreliable Airspeed & ROPS",
-    "category": "Built-in Standard",
+    "title": "Unreliable Airspeed & ROW/ROPS",
+    "category": "Custom Cloud Template",
     "role": "CA / FO",
-    "isSystemBuiltin": true,
-    "updatedBy": "Tigerair Flight Training Division",
-    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "isSystemBuiltin": false,
     "ipSetup": {
       "environment": "TO: 290/10 5KM WET | LD: 110/50 CONTAMINATED RWY (Strong tailwind for ROPS)",
       "aircraft": "ZFW 126,000 | FUEL 22,000 lb | GW 148,000",
@@ -299,38 +297,8 @@
       "Incorrect pitch/thrust setting during initial climb",
       "Ignoring ROPS warning"
     ],
-    "flightPath": [
-      {
-        "phase": "takeoff",
-        "name": "RJFS 29",
-        "type": "airport"
-      },
-      {
-        "phase": "climb",
-        "name": "UNRELIABLE AIRSPEED",
-        "type": "critical"
-      },
-      {
-        "phase": "cruise",
-        "name": "REPO",
-        "type": "normal"
-      },
-      {
-        "phase": "approach",
-        "name": "ILS 29",
-        "type": "normal"
-      },
-      {
-        "phase": "approach",
-        "name": "ROPS",
-        "type": "critical"
-      },
-      {
-        "phase": "landing",
-        "name": "RJFS 29",
-        "type": "airport"
-      }
-    ]
+    "updatedBy": "Captain Paul Yang (paulyang)",
+    "updatedAt": "2026-08-03T13:36:20.455Z"
   },
   {
     "id": "tpl-cat2-autoland-ca-lhs",
