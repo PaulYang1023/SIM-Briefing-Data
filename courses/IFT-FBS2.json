@@ -1,0 +1,589 @@
+{
+  "course_code": "IFT-FBS2",
+  "courseCode": "IFT-FBS2",
+  "fctg_category": "2.2 INITIAL FULL TRANSITION",
+  "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+  "year": 2026,
+  "current_revision": "REV.04",
+  "currentRevision": "REV.04",
+  "updated_at": "2026-08-03T09:36:18.690Z",
+  "updatedAt": "2026-08-03T09:36:18.690Z",
+  "updated_by": "Shih-Hsiu Yang (paul.yang)",
+  "updatedBy": "Shih-Hsiu Yang (paul.yang)",
+  "session_title": "Initial Full Transition FBS 2",
+  "sessionTitle": "Initial Full Transition FBS 2",
+  "briefing_data": {
+    "global": {
+      "courseCode": "IFT-FBS2",
+      "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+      "caaYear": "2026",
+      "revisionNo": "REV.04",
+      "pageTitle": "Initial Full Transition FBS 2",
+      "sidebarTitle": "Initial Full Transition FBS 2",
+      "welcomeSubtitle": "Initial Full Transition FBS 2",
+      "objectives": [
+        "Build up the trainee's confidence to safely operate in demanding environments.",
+        "Learn to deal with high workload situations by practicing efficient workload management.",
+        "Optimal use of automation, proper use and monitoring of all levels of flight automation.",
+        "Prioritization (Aviate, Navigate, Communicate).",
+        "Apply CRM attributes while practicing selected normal & abnormal procedures.",
+        "Apply Threat & Error Management (TEM) countermeasures."
+      ],
+      "notes": [
+        "Headset & shoulder harnesses will be used as for real flight.",
+        "The instructor will interface with the crew as ATC, mechanic, CIC, etc. IP should intervene to avoid cumulative effects if a situation is not handled correctly.",
+        "The crew should not be left to face an excessive workload.",
+        "Remaining simulator time should be used to repeat unsatisfactory maneuvers or practice for the proficiency check.",
+        "The crew briefing and take-off data calculation will be conducted in the briefing room for time saving.",
+        "Sequence of events may be adjusted at instructor's discretion.",
+        "Upon IP's request, the autopilot(s) must be disengaged to gain proficiency in manual flight during final approaches with ILS."
+      ],
+      "systemMalfunctions": [
+        "ATA21 Air Conditioning / Pressurization / Ventilation",
+        "ATA22 Auto Flight"
+      ],
+      "maneuvers": [
+        "Crosswind Takeoff",
+        "T3CAS",
+        "FCU/FMGS exercise",
+        "Stall Recovery - Clean Configuration",
+        "Precision Approach - ILS",
+        "All Engine Soft Go Around",
+        "Non-Precision Approach - NDB",
+        "Landing - Crosswind Landing"
+      ],
+      "procedures": [
+        "Normal Procedure",
+        "Abnormal Procedure/Memory Item (T3CAS, Stall Recovery, System Malfunction, MEL)",
+        "Supplementary Procedures (Manual Engine Start)"
+      ],
+      "ipCpCaRhs": [],
+      "miscellaneous": [
+        "MEL PACK 2 INOP"
+      ],
+      "discussion": [
+        {
+          "text": "MEL",
+          "subItems": [
+            "What's MEL? Can you explain why we need a MEL?",
+            "How PACK 2 INOP in MEL will affect us?",
+            "What's the proper procedure after a system malfunction display on ECAM on ground?"
+          ]
+        },
+        {
+          "text": "Memory Item",
+          "subItems": [
+            "What's the memory item for T3CAS",
+            "What's the memory item for STALL RECOVERY"
+          ]
+        },
+        {
+          "text": "SYSTEM",
+          "subItems": [
+            "Can you shortly describe AUTO FLT system?",
+            "What's the function of FAC? How many FACs do we have in a A320?",
+            "Can you describe what's T3CAS?",
+            "What's ROW/ROPS? Describe it's function."
+          ]
+        },
+        {
+          "text": "Maneuver",
+          "subItems": [
+            "Stall recovery",
+            "Crosswind Takeoff",
+            "Crosswind landing (Crab vs. Sideslip)"
+          ]
+        }
+      ],
+      "weather": "METAR RCKH 010530Z 36015KT CAVOK 25/5 Q1009",
+      "dclPdc": [
+        {
+          "title": "PDC Clearance",
+          "content": "B-50021 RCKH TTW502. 01JUNE26\n0530Z\nRCKH PDC 1\nCLD 0545 010626 RCKH PDC 521\nTTW502 CLRD TO RCTP OFF RWY 27\nVIA TNN1H DEPARTURE \nFPR MNTN F250\nSQUAWK 2602 ADT 0555Z NEXT FREQ 121.9\nATIS A\nTSAT 0545Z REPORT WHEN READY TO START\nUP ENGINES ON NEXT FREQ"
+        },
+        {
+          "title": "ATC Request Status",
+          "content": "B-50021 RCKH TTW502 01JUNE26\n0536Z\nATC REQUEST STATUS\nFSM 0536 010726 RCKH\nTTW502 CDA RECEIVED\nCLEARANCE CONFIRMED"
+        }
+      ],
+      "datis": [
+        {
+          "label": "ATIS A",
+          "title": "DEP ATIS A",
+          "content": "B-50021 RCKH TTW502 01JUNE26\n0530Z\nRCKH DEP ATIS A\n0530Z M0530Z\n(APCH) ILS RWY 27\nDEP FREQ 124.7\n\nM 010530Z 36015KT CAVOK 25/5 Q1009"
+        }
+      ]
+    },
+    "profiles": {
+      "p1": {
+        "title": "Standard Training Profile",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "36015KT CAVOK 25/5 Q1009 DRY",
+          "aircraft": "ZFW/CG 128.6/30 FUEL 17 TOW 145.1",
+          "triggers": ""
+        },
+        "ipErrors": [
+          {
+            "text": "Manual Engine Start",
+            "subItems": [
+              "Role confusion - Who's acting on controls?",
+              "Carry out Manual Engine Start procedure before consulting MEL"
+            ]
+          },
+          {
+            "text": "T3CAS",
+            "subItems": [
+              "Forget standard callouts"
+            ]
+          },
+          {
+            "text": "Stall Recovery",
+            "subItems": [
+              "Forget standard callout",
+              "Not maintaining enough pitch down control, caused second stall warning",
+              "Not ordering \"FLAP 1\" during recovery below 20,000'",
+              "Retract SLATS before it is fully deployed, SLATS is to increase critical AoA",
+              "Late \"FLAP1 1\" order and retract to FLAPS 0 before it is fully extended"
+            ]
+          },
+          {
+            "text": "NDB approach",
+            "subItems": [
+              "Not briefing with \"FLS briefing card\"",
+              "ARM approach too early (Next waypoint is not FDP)"
+            ]
+          },
+          {
+            "text": "ECAM procedure",
+            "subItems": [
+              "Missing standard callout for ECAM titles",
+              "PM/PF role confusion",
+              "Cockpit controls/switches handling",
+              "Remove control controls' guarded cover before confirmation",
+              "Too focus on ECAM, losing aircraft monitoring/SA"
+            ]
+          },
+          {
+            "text": "Go Around",
+            "subItems": [
+              "Missing FMA callouts",
+              "Missing flight path monitor/SA",
+              "Confusion/Lack of knowledge regarding SRS GA modes",
+              "Complacency caused \"Surprise Effect\" - not fully prepared for unexpected go-around"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RCKH 27",
+            "type": "airport",
+            "offsetX": 50
+          },
+          {
+            "phase": "takeoff",
+            "name": "MAN ENG START",
+            "type": "normal"
+          },
+          {
+            "phase": "climb",
+            "name": "T3CAS",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "FCU/FMGS EXER",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "STALL RECOVERY",
+            "type": "critical"
+          },
+          {
+            "phase": "approach",
+            "name": "FAC 1 + 2 Fault",
+            "type": "warning"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 27",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "Soft Go Around",
+            "type": "normal"
+          },
+          {
+            "phase": "holding",
+            "name": "RDR VECTOR/REPO",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "NDB 09",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "Crosswind landing",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RCKH 09",
+            "type": "airport"
+          }
+        ]
+      },
+      "p2": {
+        "title": "ROPS",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "Tailwind 50KTS",
+          "aircraft": "ZFW/CG 128.6/30 FUEL 17 TOW 145.1",
+          "triggers": ""
+        },
+        "ipErrors": [
+          {
+            "text": "ROW",
+            "subItems": [
+              "Did NOT set correct RWY COND",
+              "In-stablized Approach"
+            ]
+          },
+          {
+            "text": "ROP",
+            "subItems": [
+              "Hesitation on REV and BRK",
+              "Long Flare",
+              "Contaminated Runway",
+              "Short Runway"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 09 AUTOLAND",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ROW",
+            "type": "warning"
+          },
+          {
+            "phase": "approach",
+            "name": "ROW",
+            "type": "critical"
+          },
+          {
+            "phase": "landing",
+            "name": "ROP",
+            "type": "warning"
+          },
+          {
+            "phase": "landing",
+            "name": "RJFS 29",
+            "type": "airport"
+          }
+        ]
+      }
+    }
+  },
+  "briefingData": {
+    "global": {
+      "courseCode": "IFT-FBS2",
+      "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+      "caaYear": "2026",
+      "revisionNo": "REV.04",
+      "pageTitle": "Initial Full Transition FBS 2",
+      "sidebarTitle": "Initial Full Transition FBS 2",
+      "welcomeSubtitle": "Initial Full Transition FBS 2",
+      "objectives": [
+        "Build up the trainee's confidence to safely operate in demanding environments.",
+        "Learn to deal with high workload situations by practicing efficient workload management.",
+        "Optimal use of automation, proper use and monitoring of all levels of flight automation.",
+        "Prioritization (Aviate, Navigate, Communicate).",
+        "Apply CRM attributes while practicing selected normal & abnormal procedures.",
+        "Apply Threat & Error Management (TEM) countermeasures."
+      ],
+      "notes": [
+        "Headset & shoulder harnesses will be used as for real flight.",
+        "The instructor will interface with the crew as ATC, mechanic, CIC, etc. IP should intervene to avoid cumulative effects if a situation is not handled correctly.",
+        "The crew should not be left to face an excessive workload.",
+        "Remaining simulator time should be used to repeat unsatisfactory maneuvers or practice for the proficiency check.",
+        "The crew briefing and take-off data calculation will be conducted in the briefing room for time saving.",
+        "Sequence of events may be adjusted at instructor's discretion.",
+        "Upon IP's request, the autopilot(s) must be disengaged to gain proficiency in manual flight during final approaches with ILS."
+      ],
+      "systemMalfunctions": [
+        "ATA21 Air Conditioning / Pressurization / Ventilation",
+        "ATA22 Auto Flight"
+      ],
+      "maneuvers": [
+        "Crosswind Takeoff",
+        "T3CAS",
+        "FCU/FMGS exercise",
+        "Stall Recovery - Clean Configuration",
+        "Precision Approach - ILS",
+        "All Engine Soft Go Around",
+        "Non-Precision Approach - NDB",
+        "Landing - Crosswind Landing"
+      ],
+      "procedures": [
+        "Normal Procedure",
+        "Abnormal Procedure/Memory Item (T3CAS, Stall Recovery, System Malfunction, MEL)",
+        "Supplementary Procedures (Manual Engine Start)"
+      ],
+      "ipCpCaRhs": [],
+      "miscellaneous": [
+        "MEL PACK 2 INOP"
+      ],
+      "discussion": [
+        {
+          "text": "MEL",
+          "subItems": [
+            "What's MEL? Can you explain why we need a MEL?",
+            "How PACK 2 INOP in MEL will affect us?",
+            "What's the proper procedure after a system malfunction display on ECAM on ground?"
+          ]
+        },
+        {
+          "text": "Memory Item",
+          "subItems": [
+            "What's the memory item for T3CAS",
+            "What's the memory item for STALL RECOVERY"
+          ]
+        },
+        {
+          "text": "SYSTEM",
+          "subItems": [
+            "Can you shortly describe AUTO FLT system?",
+            "What's the function of FAC? How many FACs do we have in a A320?",
+            "Can you describe what's T3CAS?",
+            "What's ROW/ROPS? Describe it's function."
+          ]
+        },
+        {
+          "text": "Maneuver",
+          "subItems": [
+            "Stall recovery",
+            "Crosswind Takeoff",
+            "Crosswind landing (Crab vs. Sideslip)"
+          ]
+        }
+      ],
+      "weather": "METAR RCKH 010530Z 36015KT CAVOK 25/5 Q1009",
+      "dclPdc": [
+        {
+          "title": "PDC Clearance",
+          "content": "B-50021 RCKH TTW502. 01JUNE26\n0530Z\nRCKH PDC 1\nCLD 0545 010626 RCKH PDC 521\nTTW502 CLRD TO RCTP OFF RWY 27\nVIA TNN1H DEPARTURE \nFPR MNTN F250\nSQUAWK 2602 ADT 0555Z NEXT FREQ 121.9\nATIS A\nTSAT 0545Z REPORT WHEN READY TO START\nUP ENGINES ON NEXT FREQ"
+        },
+        {
+          "title": "ATC Request Status",
+          "content": "B-50021 RCKH TTW502 01JUNE26\n0536Z\nATC REQUEST STATUS\nFSM 0536 010726 RCKH\nTTW502 CDA RECEIVED\nCLEARANCE CONFIRMED"
+        }
+      ],
+      "datis": [
+        {
+          "label": "ATIS A",
+          "title": "DEP ATIS A",
+          "content": "B-50021 RCKH TTW502 01JUNE26\n0530Z\nRCKH DEP ATIS A\n0530Z M0530Z\n(APCH) ILS RWY 27\nDEP FREQ 124.7\n\nM 010530Z 36015KT CAVOK 25/5 Q1009"
+        }
+      ]
+    },
+    "profiles": {
+      "p1": {
+        "title": "Standard Training Profile",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "36015KT CAVOK 25/5 Q1009 DRY",
+          "aircraft": "ZFW/CG 128.6/30 FUEL 17 TOW 145.1",
+          "triggers": ""
+        },
+        "ipErrors": [
+          {
+            "text": "Manual Engine Start",
+            "subItems": [
+              "Role confusion - Who's acting on controls?",
+              "Carry out Manual Engine Start procedure before consulting MEL"
+            ]
+          },
+          {
+            "text": "T3CAS",
+            "subItems": [
+              "Forget standard callouts"
+            ]
+          },
+          {
+            "text": "Stall Recovery",
+            "subItems": [
+              "Forget standard callout",
+              "Not maintaining enough pitch down control, caused second stall warning",
+              "Not ordering \"FLAP 1\" during recovery below 20,000'",
+              "Retract SLATS before it is fully deployed, SLATS is to increase critical AoA",
+              "Late \"FLAP1 1\" order and retract to FLAPS 0 before it is fully extended"
+            ]
+          },
+          {
+            "text": "NDB approach",
+            "subItems": [
+              "Not briefing with \"FLS briefing card\"",
+              "ARM approach too early (Next waypoint is not FDP)"
+            ]
+          },
+          {
+            "text": "ECAM procedure",
+            "subItems": [
+              "Missing standard callout for ECAM titles",
+              "PM/PF role confusion",
+              "Cockpit controls/switches handling",
+              "Remove control controls' guarded cover before confirmation",
+              "Too focus on ECAM, losing aircraft monitoring/SA"
+            ]
+          },
+          {
+            "text": "Go Around",
+            "subItems": [
+              "Missing FMA callouts",
+              "Missing flight path monitor/SA",
+              "Confusion/Lack of knowledge regarding SRS GA modes",
+              "Complacency caused \"Surprise Effect\" - not fully prepared for unexpected go-around"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RCKH 27",
+            "type": "airport",
+            "offsetX": 50
+          },
+          {
+            "phase": "takeoff",
+            "name": "MAN ENG START",
+            "type": "normal"
+          },
+          {
+            "phase": "climb",
+            "name": "T3CAS",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "FCU/FMGS EXER",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "STALL RECOVERY",
+            "type": "critical"
+          },
+          {
+            "phase": "approach",
+            "name": "FAC 1 + 2 Fault",
+            "type": "warning"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 27",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "Soft Go Around",
+            "type": "normal"
+          },
+          {
+            "phase": "holding",
+            "name": "RDR VECTOR/REPO",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "NDB 09",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "Crosswind landing",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RCKH 09",
+            "type": "airport"
+          }
+        ]
+      },
+      "p2": {
+        "title": "ROPS",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "Tailwind 50KTS",
+          "aircraft": "ZFW/CG 128.6/30 FUEL 17 TOW 145.1",
+          "triggers": ""
+        },
+        "ipErrors": [
+          {
+            "text": "ROW",
+            "subItems": [
+              "Did NOT set correct RWY COND",
+              "In-stablized Approach"
+            ]
+          },
+          {
+            "text": "ROP",
+            "subItems": [
+              "Hesitation on REV and BRK",
+              "Long Flare",
+              "Contaminated Runway",
+              "Short Runway"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 09 AUTOLAND",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ROW",
+            "type": "warning"
+          },
+          {
+            "phase": "approach",
+            "name": "ROW",
+            "type": "critical"
+          },
+          {
+            "phase": "landing",
+            "name": "ROP",
+            "type": "warning"
+          },
+          {
+            "phase": "landing",
+            "name": "RJFS 29",
+            "type": "airport"
+          }
+        ]
+      }
+    }
+  }
+}
