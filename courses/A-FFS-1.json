@@ -1,0 +1,60 @@
+{
+  "courseCode": "A-FFS-1",
+  "course_code": "A-FFS-1",
+  "fctgCategory": "2.13 SHORT COURSE TRAINING",
+  "fctg_category": "2.13 SHORT COURSE TRAINING",
+  "year": 2026,
+  "currentRevision": "REV.02",
+  "current_revision": "REV.02",
+  "updatedAt": "2026-08-01T12:00:00.000Z",
+  "updated_at": "2026-08-01T12:00:00.000Z",
+  "updatedBy": "Captain Paul Yang (paulyang)",
+  "updated_by": "Captain Paul Yang (paulyang)",
+  "sessionTitle": "Short Course A FFS-1 REV.02",
+  "session_title": "Short Course A FFS-1 REV.02",
+  "briefingData": {
+    "global": {
+      "pageTitle": "Short Course A FFS-1 Briefing & Profile",
+      "sidebarTitle": "Short Course A FFS-1",
+      "welcomeSubtitle": "Welcome to Short Course A FFS-1",
+      "objectives": [
+        "Re-establish proficiency for flight crew members returning from absence.",
+        "Review core maneuvers: RTO, OEI Takeoff, ILS Approach, Go-Around, and Stall Recovery."
+      ],
+      "notes": [
+        "Standard SOP and flight deck discipline apply.",
+        "Simulator time should be maximized for hands-on flying."
+      ],
+      "systemMalfunctions": [
+        "ATA30 Ice and Rain Protection",
+        "ATA32 Landing Gear"
+      ],
+      "maneuvers": [
+        "RTO",
+        "OEI Takeoff",
+        "ILS Approach",
+        "Go-Around",
+        "Stall Recovery"
+      ],
+      "procedures": [
+        "Normal Procedure",
+        "Abnormal Procedure/Memory Item"
+      ],
+      "ipCpCaRhs": [
+        "Takeover and Recovery Techniques"
+      ],
+      "miscellaneous": [
+        "None"
+      ],
+      "discussion": [
+        {
+          "text": "Short Course Training Policy Review",
+          "subItems": [
+            "Absence duration criteria and requalification syllabus",
+            "Airbus Golden Rules & FMA discipline"
+          ]
+        }
+      ]
+    }
+  }
+}
