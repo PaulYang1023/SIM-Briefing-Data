@@ -19,19 +19,71 @@
       "Soft GO AROUND forget to retard thrust lever to MCT."
     ],
     "flightPath": [
-      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
-      { "phase": "takeoff", "name": "COLD WX", "type": "normal" },
-      { "phase": "takeoff", "name": "LVO", "type": "normal" },
-      { "phase": "climb", "name": "T3CAS", "type": "critical" },
-      { "phase": "climb", "name": "ICE/RAIN SYS MALF", "type": "critical" },
-      { "phase": "cruise", "name": "DIVERSION", "type": "warning" },
-      { "phase": "approach", "name": "RNP 36", "type": "normal" },
-      { "phase": "approach", "name": "LDG GEAR MALF", "type": "critical" },
-      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
-      { "phase": "holding", "name": "RDR VECTOR", "type": "normal" },
-      { "phase": "approach", "name": "RNP 36", "type": "normal" },
-      { "phase": "landing", "name": "CONTAMINATED", "type": "warning" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+      {
+        "phase": "takeoff",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "takeoff",
+        "name": "COLD WX",
+        "type": "normal"
+      },
+      {
+        "phase": "takeoff",
+        "name": "LVO",
+        "type": "normal"
+      },
+      {
+        "phase": "climb",
+        "name": "T3CAS",
+        "type": "critical"
+      },
+      {
+        "phase": "climb",
+        "name": "ICE/RAIN SYS MALF",
+        "type": "critical"
+      },
+      {
+        "phase": "cruise",
+        "name": "DIVERSION",
+        "type": "warning"
+      },
+      {
+        "phase": "approach",
+        "name": "RNP 36",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "LDG GEAR MALF",
+        "type": "critical"
+      },
+      {
+        "phase": "go-around",
+        "name": "SOFT G/A",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "RDR VECTOR",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "RNP 36",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "CONTAMINATED",
+        "type": "warning"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      }
     ]
   },
   {
@@ -54,15 +106,51 @@
       "Go-Around rudder usage insufficient when thrust increased"
     ],
     "flightPath": [
-      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
-      { "phase": "takeoff", "name": "ENG FAIL V1/V2", "type": "critical" },
-      { "phase": "climb", "name": "Maneuver", "type": "normal" },
-      { "phase": "cruise", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS Z 36", "type": "normal" },
-      { "phase": "go-around", "name": "G/A", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "VIS APP", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+      {
+        "phase": "takeoff",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "takeoff",
+        "name": "ENG FAIL V1/V2",
+        "type": "critical"
+      },
+      {
+        "phase": "climb",
+        "name": "Maneuver",
+        "type": "normal"
+      },
+      {
+        "phase": "cruise",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS Z 36",
+        "type": "normal"
+      },
+      {
+        "phase": "go-around",
+        "name": "G/A",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "VIS APP",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      }
     ]
   },
   {
@@ -84,14 +172,46 @@
       "Forget to pull thrust lever back from TOGA to MCT during soft G/A"
     ],
     "flightPath": [
-      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
-      { "phase": "climb", "name": "TCAS", "type": "critical" },
-      { "phase": "cruise", "name": "CLEAN STALL", "type": "critical" },
-      { "phase": "approach", "name": "RNP 36", "type": "normal" },
-      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "RNP 36", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+      {
+        "phase": "takeoff",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "climb",
+        "name": "TCAS",
+        "type": "critical"
+      },
+      {
+        "phase": "cruise",
+        "name": "CLEAN STALL",
+        "type": "critical"
+      },
+      {
+        "phase": "approach",
+        "name": "RNP 36",
+        "type": "normal"
+      },
+      {
+        "phase": "go-around",
+        "name": "SOFT G/A",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "RNP 36",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      }
     ]
   },
   {
@@ -114,15 +234,51 @@
       "Go-Around rudder usage insufficient when thrust increased"
     ],
     "flightPath": [
-      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
-      { "phase": "takeoff", "name": "ENG FAIL V1/V2", "type": "critical" },
-      { "phase": "climb", "name": "Maneuver", "type": "normal" },
-      { "phase": "cruise", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS Z 36", "type": "normal" },
-      { "phase": "go-around", "name": "G/A", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "VIS APP", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+      {
+        "phase": "takeoff",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "takeoff",
+        "name": "ENG FAIL V1/V2",
+        "type": "critical"
+      },
+      {
+        "phase": "climb",
+        "name": "Maneuver",
+        "type": "normal"
+      },
+      {
+        "phase": "cruise",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS Z 36",
+        "type": "normal"
+      },
+      {
+        "phase": "go-around",
+        "name": "G/A",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "VIS APP",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      }
     ]
   },
   {
@@ -144,12 +300,36 @@
       "Ignoring ROPS warning"
     ],
     "flightPath": [
-      { "phase": "takeoff", "name": "RJFS 29", "type": "airport" },
-      { "phase": "climb", "name": "UNRELIABLE AIRSPEED", "type": "critical" },
-      { "phase": "cruise", "name": "REPO", "type": "normal" },
-      { "phase": "approach", "name": "ILS 29", "type": "normal" },
-      { "phase": "approach", "name": "ROPS", "type": "critical" },
-      { "phase": "landing", "name": "RJFS 29", "type": "airport" }
+      {
+        "phase": "takeoff",
+        "name": "RJFS 29",
+        "type": "airport"
+      },
+      {
+        "phase": "climb",
+        "name": "UNRELIABLE AIRSPEED",
+        "type": "critical"
+      },
+      {
+        "phase": "cruise",
+        "name": "REPO",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS 29",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ROPS",
+        "type": "critical"
+      },
+      {
+        "phase": "landing",
+        "name": "RJFS 29",
+        "type": "airport"
+      }
     ]
   },
   {
@@ -170,14 +350,46 @@
       "Incorrect Go Around callouts or execution in low visibility"
     ],
     "flightPath": [
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
-      { "phase": "approach", "name": "SYS MALF", "type": "critical" },
-      { "phase": "go-around", "name": "SOFT GA", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" },
-      { "phase": "landing", "name": "AUTOLAND", "type": "warning" }
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS 36 CAT II",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "SYS MALF",
+        "type": "critical"
+      },
+      {
+        "phase": "go-around",
+        "name": "SOFT GA",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS 36 CAT II",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "landing",
+        "name": "AUTOLAND",
+        "type": "warning"
+      }
     ]
   },
   {
@@ -198,24 +410,54 @@
       "Incorrect Go Around callouts or execution in low visibility"
     ],
     "flightPath": [
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
-      { "phase": "approach", "name": "SYS MALF", "type": "critical" },
-      { "phase": "go-around", "name": "SOFT GA", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" },
-      { "phase": "landing", "name": "AUTOLAND", "type": "warning" }
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS 36 CAT II",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "SYS MALF",
+        "type": "critical"
+      },
+      {
+        "phase": "go-around",
+        "name": "SOFT GA",
+        "type": "warning"
+      },
+      {
+        "phase": "holding",
+        "name": "REPOS",
+        "type": "normal"
+      },
+      {
+        "phase": "approach",
+        "name": "ILS 36 CAT II",
+        "type": "normal"
+      },
+      {
+        "phase": "landing",
+        "name": "RJGG 36",
+        "type": "airport"
+      },
+      {
+        "phase": "landing",
+        "name": "AUTOLAND",
+        "type": "warning"
+      }
     ]
   },
   {
     "id": "tpl-capt-rhs-landing",
-    "title": "Capt RHS Landing",
-    "category": "Built-in Standard",
+    "title": "CA RHS VIS APP GA/LDG",
+    "category": "Custom Cloud Template",
     "role": "CM1 RHS",
-    "isSystemBuiltin": true,
-    "updatedBy": "Tigerair Flight Training Division",
-    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "isSystemBuiltin": false,
     "ipSetup": {
       "environment": "WIND 270/15 or 270/30 (CP/IP) | CAVOK | Temp -5℃/-10℃",
       "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
@@ -225,13 +467,7 @@
       "Inadequate crosswind technique from RHS",
       "Hesitation on IP takeover hand-off"
     ],
-    "flightPath": [
-      { "phase": "approach", "name": "3NM FINAL", "type": "normal" },
-      { "phase": "approach", "name": "VIS APP", "type": "normal" },
-      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
-      { "phase": "holding", "name": "REPOS", "type": "normal" },
-      { "phase": "approach", "name": "VIS APP", "type": "normal" },
-      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
-    ]
+    "updatedBy": "Captain Paul Yang (paulyang)",
+    "updatedAt": "2026-08-03T13:32:50.172Z"
   }
 ]
