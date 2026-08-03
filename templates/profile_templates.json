@@ -1,0 +1,237 @@
+[
+  {
+    "id": "tpl-loft-cm1-pf",
+    "title": "LOFT",
+    "category": "Built-in Standard",
+    "role": "CM1 PF",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND 270/15 | Vis 400m | Light snow (RWY contaminated) | Temp -5℃/-10℃ | QNH 29.92",
+      "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | TOW 148,500 lb | THRUST: TOGA",
+      "triggers": "ATA-71 ENG1 N1 Vibration, ATA30 WING ANTI-ICE FAULT, ATA 32 L/R/NOSE L/G NOT DOWN LOCKED"
+    },
+    "ipErrors": [
+      "Cold weather ops crew member not strictly following supplementary Proc.",
+      "Not complying with Cold temp altitude corrections.",
+      "Hold over time snowfall intensity not following check TABLE 1C.",
+      "Soft GO AROUND forget to retard thrust lever to MCT."
+    ],
+    "flightPath": [
+      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
+      { "phase": "takeoff", "name": "COLD WX", "type": "normal" },
+      { "phase": "takeoff", "name": "LVO", "type": "normal" },
+      { "phase": "climb", "name": "T3CAS", "type": "critical" },
+      { "phase": "climb", "name": "ICE/RAIN SYS MALF", "type": "critical" },
+      { "phase": "cruise", "name": "DIVERSION", "type": "warning" },
+      { "phase": "approach", "name": "RNP 36", "type": "normal" },
+      { "phase": "approach", "name": "LDG GEAR MALF", "type": "critical" },
+      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
+      { "phase": "holding", "name": "RDR VECTOR", "type": "normal" },
+      { "phase": "approach", "name": "RNP 36", "type": "normal" },
+      { "phase": "landing", "name": "CONTAMINATED", "type": "warning" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+    ]
+  },
+  {
+    "id": "tpl-oei-visual-cm1-pf",
+    "title": "Engine Failure & Visual OEI approach",
+    "category": "Built-in Standard",
+    "role": "CM1 PF",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+      "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+      "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+    },
+    "ipErrors": [
+      "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+      "Did not check and center Beta target for lateral and directional control",
+      "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+      "Go-Around rudder usage insufficient when thrust increased"
+    ],
+    "flightPath": [
+      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
+      { "phase": "takeoff", "name": "ENG FAIL V1/V2", "type": "critical" },
+      { "phase": "climb", "name": "Maneuver", "type": "normal" },
+      { "phase": "cruise", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS Z 36", "type": "normal" },
+      { "phase": "go-around", "name": "G/A", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "VIS APP", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+    ]
+  },
+  {
+    "id": "tpl-tcas-stall-cm2-pf",
+    "title": "TCAS & Stall Recovery",
+    "category": "Built-in Standard",
+    "role": "CM2 PF",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND 270/15 | 500M BCFG OVC020 | Temp -5℃/-10℃ | CONTAMINATED RWY",
+      "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 138, VR 140, V2 145 | TOGA",
+      "triggers": "Trigger TRAFF for TCAS. Set CLEAN CONF, IDLE thrust at 10000ft for STALL."
+    },
+    "ipErrors": [
+      "Crew not following TCAS MEM ITEM",
+      "Stall recovery pitch down not sufficient or not keep pitch until speed up (caused second stall warning)",
+      "Forget to pull thrust lever back from TOGA to MCT during soft G/A"
+    ],
+    "flightPath": [
+      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
+      { "phase": "climb", "name": "TCAS", "type": "critical" },
+      { "phase": "cruise", "name": "CLEAN STALL", "type": "critical" },
+      { "phase": "approach", "name": "RNP 36", "type": "normal" },
+      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "RNP 36", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+    ]
+  },
+  {
+    "id": "tpl-oei-visual-cm2-pf",
+    "title": "Engine Failure & Visual OEI approach",
+    "category": "Built-in Standard",
+    "role": "CM2 PF",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+      "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+      "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+    },
+    "ipErrors": [
+      "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+      "Did not check and center Beta target for lateral and directional control",
+      "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+      "Go-Around rudder usage insufficient when thrust increased"
+    ],
+    "flightPath": [
+      { "phase": "takeoff", "name": "RJGG 36", "type": "airport" },
+      { "phase": "takeoff", "name": "ENG FAIL V1/V2", "type": "critical" },
+      { "phase": "climb", "name": "Maneuver", "type": "normal" },
+      { "phase": "cruise", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS Z 36", "type": "normal" },
+      { "phase": "go-around", "name": "G/A", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "VIS APP", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+    ]
+  },
+  {
+    "id": "tpl-unreliable-airspeed-rops",
+    "title": "Unreliable Airspeed & ROPS",
+    "category": "Built-in Standard",
+    "role": "CA / FO",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "TO: 290/10 5KM WET | LD: 110/50 CONTAMINATED RWY (Strong tailwind for ROPS)",
+      "aircraft": "ZFW 126,000 | FUEL 22,000 lb | GW 148,000",
+      "triggers": "ATA 32 NAV 2/2 TOTAL BLOCKED PITOT (CAPT + STBY or F/O + STBY)"
+    },
+    "ipErrors": [
+      "Failure to apply Unreliable Airspeed memory items promptly",
+      "Incorrect pitch/thrust setting during initial climb",
+      "Ignoring ROPS warning"
+    ],
+    "flightPath": [
+      { "phase": "takeoff", "name": "RJFS 29", "type": "airport" },
+      { "phase": "climb", "name": "UNRELIABLE AIRSPEED", "type": "critical" },
+      { "phase": "cruise", "name": "REPO", "type": "normal" },
+      { "phase": "approach", "name": "ILS 29", "type": "normal" },
+      { "phase": "approach", "name": "ROPS", "type": "critical" },
+      { "phase": "landing", "name": "RJFS 29", "type": "airport" }
+    ]
+  },
+  {
+    "id": "tpl-cat2-autoland-ca-lhs",
+    "title": "CAT II Autoland",
+    "category": "Built-in Standard",
+    "role": "CA LHS PF",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+      "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+      "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+    },
+    "ipErrors": [
+      "Delayed recognition of Autoland malfunction",
+      "Incorrect Go Around callouts or execution in low visibility"
+    ],
+    "flightPath": [
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
+      { "phase": "approach", "name": "SYS MALF", "type": "critical" },
+      { "phase": "go-around", "name": "SOFT GA", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" },
+      { "phase": "landing", "name": "AUTOLAND", "type": "warning" }
+    ]
+  },
+  {
+    "id": "tpl-cat2-autoland-ca-rhs",
+    "title": "CAT II Autoland",
+    "category": "Built-in Standard",
+    "role": "CA RHS PM",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+      "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+      "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+    },
+    "ipErrors": [
+      "Delayed recognition of Autoland malfunction",
+      "Incorrect Go Around callouts or execution in low visibility"
+    ],
+    "flightPath": [
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
+      { "phase": "approach", "name": "SYS MALF", "type": "critical" },
+      { "phase": "go-around", "name": "SOFT GA", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "ILS 36 CAT II", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" },
+      { "phase": "landing", "name": "AUTOLAND", "type": "warning" }
+    ]
+  },
+  {
+    "id": "tpl-capt-rhs-landing",
+    "title": "Capt RHS Landing",
+    "category": "Built-in Standard",
+    "role": "CM1 RHS",
+    "isSystemBuiltin": true,
+    "updatedBy": "Tigerair Flight Training Division",
+    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "ipSetup": {
+      "environment": "WIND 270/15 or 270/30 (CP/IP) | CAVOK | Temp -5℃/-10℃",
+      "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+      "triggers": "CP/IP Take Over, Take over landing or go around"
+    },
+    "ipErrors": [
+      "Inadequate crosswind technique from RHS",
+      "Hesitation on IP takeover hand-off"
+    ],
+    "flightPath": [
+      { "phase": "approach", "name": "3NM FINAL", "type": "normal" },
+      { "phase": "approach", "name": "VIS APP", "type": "normal" },
+      { "phase": "go-around", "name": "SOFT G/A", "type": "warning" },
+      { "phase": "holding", "name": "REPOS", "type": "normal" },
+      { "phase": "approach", "name": "VIS APP", "type": "normal" },
+      { "phase": "landing", "name": "RJGG 36", "type": "airport" }
+    ]
+  }
+]
