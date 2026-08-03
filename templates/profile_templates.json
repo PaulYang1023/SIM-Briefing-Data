@@ -88,12 +88,10 @@
   },
   {
     "id": "tpl-oei-visual-cm1-pf",
-    "title": "Engine Failure & Visual OEI approach",
-    "category": "Built-in Standard",
+    "title": "OEI takeoff/approach/go around and landing",
+    "category": "Custom Cloud Template",
     "role": "CM1 PF",
-    "isSystemBuiltin": true,
-    "updatedBy": "Tigerair Flight Training Division",
-    "updatedAt": "2026-08-03T13:08:35.693Z",
+    "isSystemBuiltin": false,
     "ipSetup": {
       "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
       "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
@@ -105,53 +103,8 @@
       "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
       "Go-Around rudder usage insufficient when thrust increased"
     ],
-    "flightPath": [
-      {
-        "phase": "takeoff",
-        "name": "RJGG 36",
-        "type": "airport"
-      },
-      {
-        "phase": "takeoff",
-        "name": "ENG FAIL V1/V2",
-        "type": "critical"
-      },
-      {
-        "phase": "climb",
-        "name": "Maneuver",
-        "type": "normal"
-      },
-      {
-        "phase": "cruise",
-        "name": "REPOS",
-        "type": "normal"
-      },
-      {
-        "phase": "approach",
-        "name": "ILS Z 36",
-        "type": "normal"
-      },
-      {
-        "phase": "go-around",
-        "name": "G/A",
-        "type": "warning"
-      },
-      {
-        "phase": "holding",
-        "name": "REPOS",
-        "type": "normal"
-      },
-      {
-        "phase": "approach",
-        "name": "VIS APP",
-        "type": "normal"
-      },
-      {
-        "phase": "landing",
-        "name": "RJGG 36",
-        "type": "airport"
-      }
-    ]
+    "updatedBy": "Captain Paul Yang (paulyang)",
+    "updatedAt": "2026-08-03T14:06:38.721Z"
   },
   {
     "id": "tpl-tcas-stall-cm2-pf",
