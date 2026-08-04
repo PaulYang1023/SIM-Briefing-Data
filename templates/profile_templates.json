@@ -330,7 +330,7 @@
     "id": "tpl-capt-rhs-landing",
     "title": "CA RHS VIS APP GA/LDG",
     "category": "Custom Cloud Template",
-    "role": "CM1 RHS",
+    "role": "CA RHS PF",
     "isSystemBuiltin": false,
     "ipSetup": {
       "environment": "WIND 270/15 or 270/30 (CP/IP) | CAVOK | Temp -5℃/-10℃",
@@ -342,6 +342,6 @@
       "Hesitation on IP takeover hand-off"
     ],
     "updatedBy": "Captain Paul Yang (paulyang)",
-    "updatedAt": "2026-08-03T13:33:01.792Z"
+    "updatedAt": "2026-08-04T00:54:30.780Z"
   }
 ]
