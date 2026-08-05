@@ -4,10 +4,10 @@
   "fctg_category": "2.2 APQ TRAINING",
   "fctgCategory": "2.2 APQ TRAINING",
   "year": 2026,
-  "current_revision": "REV.03",
-  "currentRevision": "REV.03",
-  "updated_at": "2026-08-05T08:20:21.152Z",
-  "updatedAt": "2026-08-05T08:20:21.152Z",
+  "current_revision": "REV.04",
+  "currentRevision": "REV.04",
+  "updated_at": "2026-08-05T08:48:50.164Z",
+  "updatedAt": "2026-08-05T08:48:50.164Z",
   "updated_by": "Shih-Hsiu Yang (paul.yang)",
   "updatedBy": "Shih-Hsiu Yang (paul.yang)",
   "session_title": "APQ FFS 1",
@@ -17,7 +17,7 @@
       "courseCode": "APQ-FFS-1",
       "fctgCategory": "2.2 APQ TRAINING",
       "caaYear": "2026",
-      "revisionNo": "REV.03",
+      "revisionNo": "REV.04",
       "pageTitle": "APQ FFS 1",
       "sidebarTitle": "APQ FFS 1",
       "welcomeSubtitle": "APQ FFS 1",
@@ -42,16 +42,64 @@
       ],
       "systemMalfunctions": [],
       "maneuvers": [
-        "COCKPIT INTRODUCTION",
-        "Takeoff",
-        "Level flight at 3000ft, 250 kts",
+        {
+          "text": "COCKPIT INTRODUCTION",
+          "subItems": [
+            "Simulator safety",
+            "Seat position, eyes position adjustment, rudder pedal and feet position",
+            "Side stick griping, Thrust levers control",
+            "Communication system (Head set. interphone, VHF, COM/ACP panel)",
+            "FCU initial setting",
+            "Simplified cockpit preparation",
+            "ATIS & ATC Clearance",
+            "SID Briefing"
+          ]
+        },
+        {
+          "text": "Takeoff",
+          "subItems": [
+            "Thrust manually set to approximately Flex N1 for takeoff",
+            "Direction control",
+            "Takeoff rotate rate and pitch attitude controls",
+            "Liftoff and climb out",
+            "Thrust reduction to CL (then disengage A/THR) and acceleration for cleanup, climb and maintain 3,000 ft, 250 kias.",
+            "Standard calls"
+          ]
+        },
+        {
+          "text": "Level flight at 3000ft, 250 kts",
+          "subItems": [
+            "Control input and responses on pitch, roll and yaw",
+            "Turns and roll out",
+            "Decelerate and accelerate while maintain level flight",
+            "Practice instrument scan and cross check"
+          ]
+        },
         "Climb / descend, level off, thrust change",
         "Maneuver S",
         "Steep turns (FAC 1,2 off, ALTR Law)",
-        "Practice approach and configure landing configuration for final descent (Not ILS approach)",
-        "Level off",
+        {
+          "text": "Practice approach and configure landing configuration for final descent (Not ILS approach)",
+          "subItems": [
+            "IP Demo first",
+            "TLA IDLE to decelerate to Green Dot speed, extend Flaps 1, 2, start descend at 1,000 fpm, L/G down, 750 fpm, Flaps 3, Flaps full, Vapp",
+            "Notice the pitch attitude and thrust change for different configuration"
+          ]
+        },
+        {
+          "text": "Level off",
+          "subItems": [
+            "(Cont’d above maneuver) Level off at 500 ft, keep Vapp in landing configuration."
+          ]
+        },
         "Trainee repeats above maneuver.",
-        "Final approach and landing controls",
+        {
+          "text": "Final approach and landing controls",
+          "subItems": [
+            "IP Demo, first, the approach control technique, on vertical path, center line alignment, flare technique,",
+            "Freeze Sim at 200’, 100’, threshold to show the sight vision of the height and runway visual references."
+          ]
+        },
         "Touch&Go, Visual patterns (No Bird)"
       ],
       "procedures": [],
@@ -141,7 +189,7 @@
       "courseCode": "APQ-FFS-1",
       "fctgCategory": "2.2 APQ TRAINING",
       "caaYear": "2026",
-      "revisionNo": "REV.03",
+      "revisionNo": "REV.04",
       "pageTitle": "APQ FFS 1",
       "sidebarTitle": "APQ FFS 1",
       "welcomeSubtitle": "APQ FFS 1",
@@ -166,16 +214,64 @@
       ],
       "systemMalfunctions": [],
       "maneuvers": [
-        "COCKPIT INTRODUCTION",
-        "Takeoff",
-        "Level flight at 3000ft, 250 kts",
+        {
+          "text": "COCKPIT INTRODUCTION",
+          "subItems": [
+            "Simulator safety",
+            "Seat position, eyes position adjustment, rudder pedal and feet position",
+            "Side stick griping, Thrust levers control",
+            "Communication system (Head set. interphone, VHF, COM/ACP panel)",
+            "FCU initial setting",
+            "Simplified cockpit preparation",
+            "ATIS & ATC Clearance",
+            "SID Briefing"
+          ]
+        },
+        {
+          "text": "Takeoff",
+          "subItems": [
+            "Thrust manually set to approximately Flex N1 for takeoff",
+            "Direction control",
+            "Takeoff rotate rate and pitch attitude controls",
+            "Liftoff and climb out",
+            "Thrust reduction to CL (then disengage A/THR) and acceleration for cleanup, climb and maintain 3,000 ft, 250 kias.",
+            "Standard calls"
+          ]
+        },
+        {
+          "text": "Level flight at 3000ft, 250 kts",
+          "subItems": [
+            "Control input and responses on pitch, roll and yaw",
+            "Turns and roll out",
+            "Decelerate and accelerate while maintain level flight",
+            "Practice instrument scan and cross check"
+          ]
+        },
         "Climb / descend, level off, thrust change",
         "Maneuver S",
         "Steep turns (FAC 1,2 off, ALTR Law)",
-        "Practice approach and configure landing configuration for final descent (Not ILS approach)",
-        "Level off",
+        {
+          "text": "Practice approach and configure landing configuration for final descent (Not ILS approach)",
+          "subItems": [
+            "IP Demo first",
+            "TLA IDLE to decelerate to Green Dot speed, extend Flaps 1, 2, start descend at 1,000 fpm, L/G down, 750 fpm, Flaps 3, Flaps full, Vapp",
+            "Notice the pitch attitude and thrust change for different configuration"
+          ]
+        },
+        {
+          "text": "Level off",
+          "subItems": [
+            "(Cont’d above maneuver) Level off at 500 ft, keep Vapp in landing configuration."
+          ]
+        },
         "Trainee repeats above maneuver.",
-        "Final approach and landing controls",
+        {
+          "text": "Final approach and landing controls",
+          "subItems": [
+            "IP Demo, first, the approach control technique, on vertical path, center line alignment, flare technique,",
+            "Freeze Sim at 200’, 100’, threshold to show the sight vision of the height and runway visual references."
+          ]
+        },
         "Touch&Go, Visual patterns (No Bird)"
       ],
       "procedures": [],
