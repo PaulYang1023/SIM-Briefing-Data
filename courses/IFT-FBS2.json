@@ -1,13 +1,13 @@
 {
   "course_code": "IFT-FBS2",
   "courseCode": "IFT-FBS2",
-  "fctg_category": "2.2 INITIAL FULL TRANSITION",
-  "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+  "fctg_category": "2.3 INITIAL FULL TRANSITION",
+  "fctgCategory": "2.3 INITIAL FULL TRANSITION",
   "year": 2026,
-  "current_revision": "REV.04",
-  "currentRevision": "REV.04",
-  "updated_at": "2026-08-03T09:36:18.690Z",
-  "updatedAt": "2026-08-03T09:36:18.690Z",
+  "current_revision": "REV.05",
+  "currentRevision": "REV.05",
+  "updated_at": "2026-08-05T06:51:28.772Z",
+  "updatedAt": "2026-08-05T06:51:28.772Z",
   "updated_by": "Shih-Hsiu Yang (paul.yang)",
   "updatedBy": "Shih-Hsiu Yang (paul.yang)",
   "session_title": "Initial Full Transition FBS 2",
@@ -15,9 +15,9 @@
   "briefing_data": {
     "global": {
       "courseCode": "IFT-FBS2",
-      "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+      "fctgCategory": "2.3 INITIAL FULL TRANSITION",
       "caaYear": "2026",
-      "revisionNo": "REV.04",
+      "revisionNo": "REV.05",
       "pageTitle": "Initial Full Transition FBS 2",
       "sidebarTitle": "Initial Full Transition FBS 2",
       "welcomeSubtitle": "Initial Full Transition FBS 2",
@@ -302,9 +302,9 @@
   "briefingData": {
     "global": {
       "courseCode": "IFT-FBS2",
-      "fctgCategory": "2.2 INITIAL FULL TRANSITION",
+      "fctgCategory": "2.3 INITIAL FULL TRANSITION",
       "caaYear": "2026",
-      "revisionNo": "REV.04",
+      "revisionNo": "REV.05",
       "pageTitle": "Initial Full Transition FBS 2",
       "sidebarTitle": "Initial Full Transition FBS 2",
       "welcomeSubtitle": "Initial Full Transition FBS 2",
