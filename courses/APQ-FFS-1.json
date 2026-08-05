@@ -4,10 +4,10 @@
   "fctg_category": "2.2 APQ TRAINING",
   "fctgCategory": "2.2 APQ TRAINING",
   "year": 2026,
-  "current_revision": "REV.02",
-  "currentRevision": "REV.02",
-  "updated_at": "2026-08-05T07:27:58.655Z",
-  "updatedAt": "2026-08-05T07:27:58.655Z",
+  "current_revision": "REV.03",
+  "currentRevision": "REV.03",
+  "updated_at": "2026-08-05T08:20:21.152Z",
+  "updatedAt": "2026-08-05T08:20:21.152Z",
   "updated_by": "Shih-Hsiu Yang (paul.yang)",
   "updatedBy": "Shih-Hsiu Yang (paul.yang)",
   "session_title": "APQ FFS 1",
@@ -17,7 +17,7 @@
       "courseCode": "APQ-FFS-1",
       "fctgCategory": "2.2 APQ TRAINING",
       "caaYear": "2026",
-      "revisionNo": "REV.02",
+      "revisionNo": "REV.03",
       "pageTitle": "APQ FFS 1",
       "sidebarTitle": "APQ FFS 1",
       "welcomeSubtitle": "APQ FFS 1",
@@ -71,7 +71,7 @@
           ]
         }
       ],
-      "weather": "",
+      "weather": "RCKH CALM CAVOK 20/10 Q1015",
       "dclPdc": [
         {
           "title": "CLEARANCE",
@@ -91,7 +91,7 @@
         "title": "Profile 1",
         "role": "CM1 PF",
         "ipSetup": {
-          "environment": "",
+          "environment": "RCKH CALM CAVOK 20/10 Q1015",
           "aircraft": "",
           "triggers": ""
         },
@@ -99,7 +99,7 @@
         "flightPath": [
           {
             "phase": "takeoff",
-            "name": "Maneuver",
+            "name": "RCKH 09",
             "type": "normal"
           },
           {
@@ -109,17 +109,27 @@
           },
           {
             "phase": "cruise",
-            "name": "Maneuver",
+            "name": "BASIC MANEUVER EXERCISE",
             "type": "normal"
           },
           {
+            "phase": "cruise",
+            "name": "MANEUVER S",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "STEEP TURN",
+            "type": "warning"
+          },
+          {
             "phase": "approach",
-            "name": "Maneuver",
+            "name": "LOC 09",
             "type": "normal"
           },
           {
             "phase": "landing",
-            "name": "Maneuver",
+            "name": "RCKH 09",
             "type": "normal"
           }
         ]
@@ -131,7 +141,7 @@
       "courseCode": "APQ-FFS-1",
       "fctgCategory": "2.2 APQ TRAINING",
       "caaYear": "2026",
-      "revisionNo": "REV.02",
+      "revisionNo": "REV.03",
       "pageTitle": "APQ FFS 1",
       "sidebarTitle": "APQ FFS 1",
       "welcomeSubtitle": "APQ FFS 1",
@@ -185,7 +195,7 @@
           ]
         }
       ],
-      "weather": "",
+      "weather": "RCKH CALM CAVOK 20/10 Q1015",
       "dclPdc": [
         {
           "title": "CLEARANCE",
@@ -205,7 +215,7 @@
         "title": "Profile 1",
         "role": "CM1 PF",
         "ipSetup": {
-          "environment": "",
+          "environment": "RCKH CALM CAVOK 20/10 Q1015",
           "aircraft": "",
           "triggers": ""
         },
@@ -213,7 +223,7 @@
         "flightPath": [
           {
             "phase": "takeoff",
-            "name": "Maneuver",
+            "name": "RCKH 09",
             "type": "normal"
           },
           {
@@ -223,17 +233,27 @@
           },
           {
             "phase": "cruise",
-            "name": "Maneuver",
+            "name": "BASIC MANEUVER EXERCISE",
             "type": "normal"
           },
           {
+            "phase": "cruise",
+            "name": "MANEUVER S",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "STEEP TURN",
+            "type": "warning"
+          },
+          {
             "phase": "approach",
-            "name": "Maneuver",
+            "name": "LOC 09",
             "type": "normal"
           },
           {
             "phase": "landing",
-            "name": "Maneuver",
+            "name": "RCKH 09",
             "type": "normal"
           }
         ]
