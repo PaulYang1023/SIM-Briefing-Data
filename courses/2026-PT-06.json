@@ -1,20 +1,24 @@
 {
-  "courseCode": "2026-PT-06",
   "course_code": "2026-PT-06",
-  "fctgCategory": "2.6 RECURRENT TRAINING",
-  "fctg_category": "2.6 RECURRENT TRAINING",
+  "courseCode": "2026-PT-06",
+  "fctg_category": "2.7 RECURRENT TRAINING (PROFICIENCY TRAINING)",
+  "fctgCategory": "2.7 RECURRENT TRAINING (PROFICIENCY TRAINING)",
   "year": 2026,
-  "currentRevision": "REV.02",
-  "current_revision": "REV.02",
-  "updatedAt": "2026-08-01T12:00:00.000Z",
-  "updated_at": "2026-08-01T12:00:00.000Z",
-  "updatedBy": "Captain Paul Yang (paulyang)",
-  "updated_by": "Captain Paul Yang (paulyang)",
-  "sessionTitle": "2026 PT-6 Standard Briefing REV.02",
-  "session_title": "2026 PT-6 Standard Briefing REV.02",
-  "briefingData": {
+  "current_revision": "REV.03",
+  "currentRevision": "REV.03",
+  "updated_at": "2026-08-06T09:52:58.227Z",
+  "updatedAt": "2026-08-06T09:52:58.227Z",
+  "updated_by": "Shih-Hsiu Yang (paul.yang)",
+  "updatedBy": "Shih-Hsiu Yang (paul.yang)",
+  "session_title": "2026 PT-6 Briefing & Profile",
+  "sessionTitle": "2026 PT-6 Briefing & Profile",
+  "briefing_data": {
     "global": {
-      "pageTitle": "2026 PT-6 Briefing & Profile (RJGG)",
+      "courseCode": "2026-PT-06",
+      "fctgCategory": "2.7 RECURRENT TRAINING (PROFICIENCY TRAINING)",
+      "caaYear": "2026",
+      "revisionNo": "REV.03",
+      "pageTitle": "2026 PT-6 Briefing & Profile",
       "sidebarTitle": "Proficiency Training 6",
       "welcomeSubtitle": "Welcome to 2026 PT-6",
       "objectives": [
@@ -210,6 +214,1059 @@
             "name": "RJGG 36",
             "type": "airport",
             "offsetX": 200
+          }
+        ]
+      },
+      "p2": {
+        "title": "OEI Takeoff/Approach/GA & Visual Approach",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+          "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+        },
+        "ipErrors": [
+          {
+            "text": "One Engine Inoperative",
+            "subItems": [
+              "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+              "Did not check and center Beta target for lateral and directional control",
+              "Tried to contact ATC before flight path stabilized or engine was secured",
+              "Did not monitor flight path and deviate from EOSID",
+              "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+              "Go-Around rudder usage insufficient when thrust increased"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "takeoff",
+            "name": "ENG FAIL V1/V2",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "Maneuver",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS Z 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p3": {
+        "title": "TCAS & Stall Recovery",
+        "role": "CM2 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 500M BCFG OVC020 | Temp -5℃/-10℃ | CONTAMINATED RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 138, VR 140, V2 145 | TOGA",
+          "triggers": "Trigger TRAFF for TCAS. Set CLEAN CONF, IDLE thrust at 10000ft for STALL."
+        },
+        "ipErrors": [
+          {
+            "text": "TCAS",
+            "subItems": [
+              "Not following standard callouts",
+              "Miss or omit procedures"
+            ]
+          },
+          {
+            "text": "Stall recovery",
+            "subItems": [
+              "Not following standard callouts",
+              "Not maintaining nose down pitch during initial descent caused second stall warning",
+              "Too aggressive on thrust, caused aircraft to pitch up and eventually triggered second stall",
+              "Late FLAPS 1 order (extend and retract in a very short period of time, which did not benefit from SLAT's extension - increase critical AoA)",
+              "Not promptly control pitch and thrust to maintain speed, caused overspeed during recovery"
+            ]
+          },
+          {
+            "text": "Soft Go Around",
+            "subItems": [
+              "Forget to pull thrust lever back from TOGA to MCT during soft G/A"
+            ]
+          },
+          {
+            "text": "RNP Approach",
+            "subItems": [
+              "Forgetting low temperature altitude correction",
+              "Omit RNP/FLS briefing",
+              "ARM APP when TO WPT is not FDP"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "climb",
+            "name": "TCAS",
+            "type": "critical"
+          },
+          {
+            "phase": "cruise",
+            "name": "CLEAN STALL",
+            "type": "critical"
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p4": {
+        "title": "OEI Takeoff/Approach/GA & Visual Approach (Copy)",
+        "role": "CM2 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+          "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+        },
+        "ipErrors": [
+          {
+            "text": "One Engine Inoperative",
+            "subItems": [
+              "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+              "Did not check and center Beta target for lateral and directional control",
+              "Tried to contact ATC before flight path stabilized or engine was secured",
+              "Did not monitor flight path and deviate from EOSID",
+              "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+              "Go-Around rudder usage insufficient when thrust increased"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "takeoff",
+            "name": "ENG FAIL V1/V2",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "Maneuver",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS Z 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p5": {
+        "title": "Unreliable Airspeed & ROW/ROPS",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "TO: 290/10 5KM WET | LD: 110/50 CONTAMINATED RWY (Strong tailwind for ROPS)",
+          "aircraft": "ZFW 126,000 | FUEL 22,000 lb | GW 148,000",
+          "triggers": "ATA 32 NAV 2/2 TOTAL BLOCKED PITOT (CAPT + STBY or F/O + STBY)"
+        },
+        "ipErrors": [
+          "Failure to apply Unreliable Airspeed memory items promptly",
+          "Incorrect pitch/thrust setting during initial climb",
+          "Ignoring ROPS warning"
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJFS 29",
+            "type": "airport"
+          },
+          {
+            "phase": "climb",
+            "name": "UNRELIABLE AIRSPEED",
+            "type": "critical"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPO",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 29",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ROPS",
+            "type": "critical"
+          },
+          {
+            "phase": "landing",
+            "name": "RJFS 29",
+            "type": "airport"
+          }
+        ]
+      },
+      "p6": {
+        "title": "CAT II Autoland",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+        },
+        "ipErrors": [
+          "Delayed recognition of Autoland malfunction",
+          "Incorrect Go Around callouts or execution in low visibility"
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "SYS MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT GA",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "landing",
+            "name": "AUTOLAND",
+            "type": "warning"
+          }
+        ]
+      },
+      "p7": {
+        "title": "CAT II Autoland ",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+        },
+        "ipErrors": [
+          "Delayed recognition of Autoland malfunction",
+          "Incorrect Go Around callouts or execution in low visibility"
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "takeoff",
+            "name": "SYS MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT GA",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "landing",
+            "name": "AUTOLAND",
+            "type": "warning"
+          }
+        ]
+      },
+      "p8": {
+        "title": "Capt RHS Landing",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 or 270/30 (CP/IP) | CAVOK | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "CP/IP Take Over, Take over landing or go around"
+        },
+        "ipErrors": [
+          "Inadequate crosswind technique from RHS",
+          "Hesitation on IP takeover hand-off"
+        ],
+        "flightPath": [
+          {
+            "phase": "approach",
+            "name": "3NM FINAL",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      }
+    }
+  },
+  "briefingData": {
+    "global": {
+      "courseCode": "2026-PT-06",
+      "fctgCategory": "2.7 RECURRENT TRAINING (PROFICIENCY TRAINING)",
+      "caaYear": "2026",
+      "revisionNo": "REV.03",
+      "pageTitle": "2026 PT-6 Briefing & Profile",
+      "sidebarTitle": "Proficiency Training 6",
+      "welcomeSubtitle": "Welcome to 2026 PT-6",
+      "objectives": [
+        "Build up the trainee's confidence to safely operate in demanding environments.",
+        "Learn to deal with high workload situations by practicing efficient workload management.",
+        "Optimal use of automation, proper use and monitoring of all levels of flight automation.",
+        "Prioritization (Aviate, Navigate, Communicate).",
+        "Apply CRM attributes while practicing selected normal & abnormal procedures.",
+        "Apply Threat & Error Management (TEM) countermeasures.",
+        "Perform Cold Weather Ops."
+      ],
+      "notes": [
+        "Headset & shoulder harnesses will be used as for real flight.",
+        "The instructor will interface with the crew as ATC, mechanic, CIC, etc. IP should intervene to avoid cumulative effects if a situation is not handled correctly.",
+        "The crew should not be left to face an excessive workload.",
+        "Remaining simulator time should be used to repeat unsatisfactory maneuvers or practice for the proficiency check.",
+        "The crew briefing and take-off data calculation will be conducted in the briefing room for time saving.",
+        "Sequence of events may be adjusted at instructor's discretion.",
+        "Upon IP's request, the autopilot(s) must be disengaged to gain proficiency in manual flight during final approaches with ILS."
+      ],
+      "systemMalfunctions": [
+        "ATA30 Ice and Rain Protection",
+        "ATA32 Landing Gear"
+      ],
+      "maneuvers": [
+        "Taxi Orientation - Low Visibility (CA only)",
+        "Takeoff - Low Visibility (CA only)",
+        "T3CAS",
+        "Non-Precision Approach - RNAV/ GPS/GNSS",
+        "All Engine Go Around",
+        "Landing - Crosswind Landing",
+        "Landing - Contaminated Runway Slush/Ice",
+        "One Engine INOP Manual ILS",
+        "One Engine INOP Go Around",
+        "One engine INOP Landing",
+        "Stall Recovery - Clean",
+        "Unreliable Airspeed",
+        "Landing - ROPS"
+      ],
+      "procedures": [
+        "Normal Procedure",
+        "Abnormal Procedure/Memory Item",
+        "Diversion",
+        "LVO"
+      ],
+      "ipCpCaRhs": [
+        "Crosswind Landing",
+        "Rejected Landing",
+        "Takeover and Recovery Techniques (IP/ CP)"
+      ],
+      "miscellaneous": [
+        "None"
+      ],
+      "discussion": [
+        {
+          "text": "LVTO JEPP RJGG REF 20-1P2",
+          "subItems": []
+        },
+        {
+          "text": "Cold WX OPS OLB-FCOM-PRO-NOR-SUP-ADVWXR",
+          "subItems": [
+            "1. DE-ANTI-ICING—Hold Over Time & Snowfall Intensity",
+            "2. DE-ANTI-ICING—GRD OPS in Cold WX",
+            "3. ENG OPS on GND in icing condition (Ice Shedding)",
+            "4. Wing anti-ice usage",
+            "5. Cold Temp ALT Corrections",
+            "6. OPS on Contaminated Airports"
+          ]
+        },
+        {
+          "text": "Review",
+          "subItems": [
+            "Related Aircraft Systems",
+            "Latest Fleet Notice/ FSI",
+            "Aircraft Limitations",
+            "Memory Items",
+            "Operations Specifications",
+            "Stable Approach Criteria"
+          ]
+        }
+      ],
+      "weather": "METAR RJGG 010530Z AUTO 27015KT 2000M -SN BKN020 -5/-10 Q2992 RMK TMP 400M BCFG VV002\n\nTAF RJGG 012305Z 0100/0206 27015KT 2000 BKN020\n  TEMPO 0104/0109 1200 BKN020\n  BECMG 0109/0113 30010KT FEW020\n  TEMPO 0113/0118 1000 SN FEW001 BKN003\n  TEMPO 0118/0122 0200 +SN VV001\n\n\nMETAR RJAA 010530Z 34010KT 240V350 7000 FEW010 SCT/// 0/-10 Q2992\n\nTAF RJAA 012305Z 0100/0206 33010KT 9999 FEW015\n  BECMG 0103/0107 29010KT\n  BECMG 0107/0109 33015KT\n\nMETAR RCTP 010230Z 23014KT 9999      FEW020 SCT045  15/10 Q1013\n\nTAF RCTP 012300Z 0100/0206 26025KT  9999  FEW015 BKN032\n  TEMPO  0104/0108 26020KT\n  TEMPO  0208/0212 25015G25KT\n  BECMG  0212/0214 24010KT\n\n\nMETAR RCKH 010230Z 04004KT 9999 SCT022 SCT240 20/15 Q1007 NOSIG\n\nTAF RCKH 012300Z 0100/0206 34005KT 8000 FEW015\n  TEMPO 0104/0108 27015KT FEW012 FEW015TCU SCT020 BKN032\n  BECMG 0108/0110 31005KT",
+      "dclPdc": [
+        {
+          "title": "PDC Clearance",
+          "content": "B-50021 RJGG TTW207. 01JUNE26\n0530Z\nRJGG PDC 1\nCLD 0545 010626 RJGG PDC 521\nTTW207 CLRD TO RCTP OFF 36\nVIA ISE3 DEPARTURE KOZA TRANS\nFPR MNTN A070 EXP FL340\nSQUAWK 7022 ADT 0555Z NEXT FREQ 121.8\nATIS A\nTSAT 0545Z REPORT WHEN READY TO START\nUP ENGINES ON NEXT FREQ"
+        },
+        {
+          "title": "ATC Request Status",
+          "content": "B-50021 RJFF TTW207 01JUNE26\n0536Z\nATC REQUEST STATUS\nFSM 0536 010726 RJGG\nTTW207 CDA RECEIVED\nCLEARANCE CONFIRMED"
+        }
+      ],
+      "datis": [
+        {
+          "label": "ATIS A",
+          "title": "DEP ATIS A",
+          "content": "B-50021 RJGG TTW207 01JUNE26\n0530Z\nRJGG DEP ATIS A\n0530Z M0530Z\n(APCH) RNP RWY 36\nDEP FREQ 120.0\nRWY 36 4/4/4 100/100/100 NR/NR/NR\nCOMPACTED SNOW/COMPACTED SNOW/COMPACTED SNOW\nM 010530Z 27015KT 2000M -SN BCFG\nVV002 -5/-10 Q2992"
+        },
+        {
+          "label": "ATIS B",
+          "title": "DEP ATIS B",
+          "content": "B-50021 RJGG TTW207 01JUNE26\n0600Z\nRJGG DEP ATIS B\n0605Z M0600Z\n(APCH) RNP RWY 36\nDEP FREQ 120.0\nLVP IN FORCE\nRWY 36 4/4/4 100/100/100 NR/NR/NR\nCOMPACTED SNOW/COMPACTED SNOW/COMPACTED SNOW\nM 010530Z 27015KT R36 400M/400M/400M FG\nVV002 -5/-10 Q2992"
+        },
+        {
+          "label": "ATIS C",
+          "title": "DEP ATIS C",
+          "content": "B-50021 RJGG TTW207 01JUNE26\n0630Z\nRJGG DEP ATIS C\n0640Z M0630Z\n(APCH) ILS Z RWY 36\nDEP FREQ 120.0\nRWY 36 5/5/5 100/100/100 NR/NR/NR\nWET/ WET/ WET\nM 010530Z 27015KT 5000M OVC020 -5/-10\nQ2992"
+        }
+      ]
+    },
+    "profiles": {
+      "p1": {
+        "title": "LOFT",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | Vis 400m | Light snow (RWY contaminated) | Temp -5℃/-10℃ | QNH 29.92",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | TOW 148,500 lb | THRUST: TOGA",
+          "triggers": "ATA-71 ENG1 N1 Vibration, ATA30 WING ANTI-ICE FAULT, ATA 32 L/R/NOSE L/G NOT DOWN LOCKED"
+        },
+        "ipErrors": [
+          "Cold weather ops crew member not strictly following supplementary Proc.",
+          "Not complying with Cold temp altitude corrections.",
+          "Hold over time snowfall intensity not following check TABLE 1C.",
+          "Soft GO AROUND forget to retard thrust lever to MCT."
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "takeoff",
+            "name": "COLD WX",
+            "type": "normal"
+          },
+          {
+            "phase": "takeoff",
+            "name": "LVO",
+            "type": "normal"
+          },
+          {
+            "phase": "climb",
+            "name": "T3CAS",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "ICE/RAIN SYS MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "cruise",
+            "name": "DIVERSION",
+            "type": "warning",
+            "offsetX": 0
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal",
+            "offsetX": 0,
+            "offsetY": 0
+          },
+          {
+            "phase": "approach",
+            "name": "LDG GEAR MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "RDR VECTOR",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "CONTAMINATED",
+            "type": "warning",
+            "offsetX": -30
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport",
+            "offsetX": 200
+          }
+        ]
+      },
+      "p2": {
+        "title": "OEI Takeoff/Approach/GA & Visual Approach",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+          "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+        },
+        "ipErrors": [
+          {
+            "text": "One Engine Inoperative",
+            "subItems": [
+              "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+              "Did not check and center Beta target for lateral and directional control",
+              "Tried to contact ATC before flight path stabilized or engine was secured",
+              "Did not monitor flight path and deviate from EOSID",
+              "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+              "Go-Around rudder usage insufficient when thrust increased"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "takeoff",
+            "name": "ENG FAIL V1/V2",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "Maneuver",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS Z 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p3": {
+        "title": "TCAS & Stall Recovery",
+        "role": "CM2 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 500M BCFG OVC020 | Temp -5℃/-10℃ | CONTAMINATED RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 138, VR 140, V2 145 | TOGA",
+          "triggers": "Trigger TRAFF for TCAS. Set CLEAN CONF, IDLE thrust at 10000ft for STALL."
+        },
+        "ipErrors": [
+          {
+            "text": "TCAS",
+            "subItems": [
+              "Not following standard callouts",
+              "Miss or omit procedures"
+            ]
+          },
+          {
+            "text": "Stall recovery",
+            "subItems": [
+              "Not following standard callouts",
+              "Not maintaining nose down pitch during initial descent caused second stall warning",
+              "Too aggressive on thrust, caused aircraft to pitch up and eventually triggered second stall",
+              "Late FLAPS 1 order (extend and retract in a very short period of time, which did not benefit from SLAT's extension - increase critical AoA)",
+              "Not promptly control pitch and thrust to maintain speed, caused overspeed during recovery"
+            ]
+          },
+          {
+            "text": "Soft Go Around",
+            "subItems": [
+              "Forget to pull thrust lever back from TOGA to MCT during soft G/A"
+            ]
+          },
+          {
+            "text": "RNP Approach",
+            "subItems": [
+              "Forgetting low temperature altitude correction",
+              "Omit RNP/FLS briefing",
+              "ARM APP when TO WPT is not FDP"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "climb",
+            "name": "TCAS",
+            "type": "critical"
+          },
+          {
+            "phase": "cruise",
+            "name": "CLEAN STALL",
+            "type": "critical"
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "RNP 36",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p4": {
+        "title": "OEI Takeoff/Approach/GA & Visual Approach (Copy)",
+        "role": "CM2 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 | 5KM OVC 020 | Temp -5℃/-10℃ | WET RWY",
+          "aircraft": "ZFW 126,000 lb | FUEL 23,000 lb | V1 140, VR 142, V2 144 | FLEX:60",
+          "triggers": "SET ENGINE1(2) FAILURE/DAMAGE AT V1/V2 SPD, Crossing Truck for G/A"
+        },
+        "ipErrors": [
+          {
+            "text": "One Engine Inoperative",
+            "subItems": [
+              "Rotate rate too fast (NEO Rotation mode), V2 not maintained",
+              "Did not check and center Beta target for lateral and directional control",
+              "Tried to contact ATC before flight path stabilized or engine was secured",
+              "Did not monitor flight path and deviate from EOSID",
+              "Did not call for QRH 'ONE ENGINE INOPERATIVE' procedure",
+              "Go-Around rudder usage insufficient when thrust increased"
+            ]
+          }
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "takeoff",
+            "name": "ENG FAIL V1/V2",
+            "type": "critical"
+          },
+          {
+            "phase": "climb",
+            "name": "Maneuver",
+            "type": "normal"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS Z 36",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          }
+        ]
+      },
+      "p5": {
+        "title": "Unreliable Airspeed & ROW/ROPS",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "TO: 290/10 5KM WET | LD: 110/50 CONTAMINATED RWY (Strong tailwind for ROPS)",
+          "aircraft": "ZFW 126,000 | FUEL 22,000 lb | GW 148,000",
+          "triggers": "ATA 32 NAV 2/2 TOTAL BLOCKED PITOT (CAPT + STBY or F/O + STBY)"
+        },
+        "ipErrors": [
+          "Failure to apply Unreliable Airspeed memory items promptly",
+          "Incorrect pitch/thrust setting during initial climb",
+          "Ignoring ROPS warning"
+        ],
+        "flightPath": [
+          {
+            "phase": "takeoff",
+            "name": "RJFS 29",
+            "type": "airport"
+          },
+          {
+            "phase": "climb",
+            "name": "UNRELIABLE AIRSPEED",
+            "type": "critical"
+          },
+          {
+            "phase": "cruise",
+            "name": "REPO",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 29",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ROPS",
+            "type": "critical"
+          },
+          {
+            "phase": "landing",
+            "name": "RJFS 29",
+            "type": "airport"
+          }
+        ]
+      },
+      "p6": {
+        "title": "CAT II Autoland",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+        },
+        "ipErrors": [
+          "Delayed recognition of Autoland malfunction",
+          "Incorrect Go Around callouts or execution in low visibility"
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "SYS MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT GA",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "landing",
+            "name": "AUTOLAND",
+            "type": "warning"
+          }
+        ]
+      },
+      "p7": {
+        "title": "CAT II Autoland ",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND CALM | RVR 300M (1200 FT) | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "Trigger Autoland Malfunction or LOW VIS ops Go Around"
+        },
+        "ipErrors": [
+          "Delayed recognition of Autoland malfunction",
+          "Incorrect Go Around callouts or execution in low visibility"
+        ],
+        "flightPath": [
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "takeoff",
+            "name": "SYS MALF",
+            "type": "critical"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT GA",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "ILS 36 CAT II",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
+          },
+          {
+            "phase": "landing",
+            "name": "AUTOLAND",
+            "type": "warning"
+          }
+        ]
+      },
+      "p8": {
+        "title": "Capt RHS Landing",
+        "role": "CM1 PF",
+        "ipSetup": {
+          "environment": "WIND 270/15 or 270/30 (CP/IP) | CAVOK | Temp -5℃/-10℃",
+          "aircraft": "ZFW 126,000 | FUEL 20,000 lb | GW 145,500 | CG 28.1%",
+          "triggers": "CP/IP Take Over, Take over landing or go around"
+        },
+        "ipErrors": [
+          "Inadequate crosswind technique from RHS",
+          "Hesitation on IP takeover hand-off"
+        ],
+        "flightPath": [
+          {
+            "phase": "approach",
+            "name": "3NM FINAL",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "go-around",
+            "name": "SOFT G/A",
+            "type": "warning"
+          },
+          {
+            "phase": "holding",
+            "name": "REPOS",
+            "type": "normal"
+          },
+          {
+            "phase": "approach",
+            "name": "VIS APP",
+            "type": "normal"
+          },
+          {
+            "phase": "landing",
+            "name": "RJGG 36",
+            "type": "airport"
           }
         ]
       }
